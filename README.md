@@ -1,4 +1,4 @@
-# Intro to Jupyter
+# Intro To Python Though Jupyter
 ### *Harlan Heilman*
 
 Notebook documents or notebooks are documents produced by the Jupyter Notebook App, which contain both code (e.g. python) and rich text elements (paragraph, equations, figures, links, markdown, etc…). Notebook documents are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable documents which can be run to perform data analysis.
@@ -26,18 +26,18 @@ Ensure that you are in the base (root) enviroment before proceeding.
 To install the required packages for the notebooks in theis repo, copy and paste the folloiwing line into the terminal and hit enter to run. 
 
 ```
-pip install numpy matplotlib scipy pandas setuptools wheel uncertainties fabio
+pip install numpy matplotlib scipy pandas uncertainties jupyterlab ipywidgets
 ```
 
 
-This installs the `numpy`, `matplotlib`, `scipy`, `pandas`, `setuptools`, `wheel`, and `fabio` python packages. This gives you acess to any functions in the packages and allows you to include these functions into any scripts in your (base) enviroment. 
+This installs the `numpy`, `matplotlib`, `scipy`, `pandas`, ang `uncertainties` python packages. This gives you acess to any functions in the packages and allows you to include these functions into any scripts in your (base) enviroment. 
 
 ## Recomended Install Method
 
 It is recomended to build an enviroment that you can use in the future for all your xray data analysis. We do this in anaconda, we first create a new enviroment:
 
 ```
-conda create -n xray python=3.7 numpy scipy pandas matplotlib
+conda create -n [InsertNameHere] numpy scipy pandas matplotlib uncertainties
 ```
 
 To enter this new xray enviroment and finish installing packages as needed, copy the lines that dont start with (#)
@@ -50,10 +50,7 @@ conda activate xray
 pip install jupyterlab ipywidgets chardet 
 
 # Useful  Packages to include
-pip install uncertainties setuptools wheel fabio 
-
-# A way you can download a notebook
-pip install nbconvert[webpdf]
+pip install uncertainties  
 ```
 
 Once this is done feel free to close your terminal and swap to your new xray eviroment. 
